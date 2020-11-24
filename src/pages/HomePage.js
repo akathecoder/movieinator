@@ -2,15 +2,17 @@ import React from "react";
 import MovieRow from "../components/MovieRow";
 import requests from "./../utils/requests";
 import "./../styles/HomePage.css";
+import Banner from "../components/Banner";
 
 function HomePage() {
   return (
     <div className="homepage">
       {/* Navbar */}
+
       {/* Banner */}
+      <Banner />
 
       {/* Movie Rows */}
-
       <MovieRow
         title="Netflix Originals"
         fetchUrl={requests.fetchNetflixOriginals}
