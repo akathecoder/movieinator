@@ -15,6 +15,7 @@ function MovieRow({ title, fetchUrl }) {
     fetchMovies();
   }, [fetchUrl]);
 
+  //   console.log(title);
   //   console.log(movies);
 
   return (
@@ -25,7 +26,11 @@ function MovieRow({ title, fetchUrl }) {
           return (
             <MovieCard
               key={movie.id}
-              title={movie.name}
+              title={
+                movie?.name ||
+                movie?.title ||
+                movie?.original_title
+              }
               imgPath={movie.poster_path}
             />
           );
