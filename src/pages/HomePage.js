@@ -8,11 +8,36 @@ function HomePage() {
     <div className="homepage">
       {/* Navbar */}
       {/* Banner */}
+
       {/* Movie Rows */}
 
       <MovieRow
-        title="Test Title"
+        title="Netflix Originals"
         fetchUrl={requests.fetchNetflixOriginals}
+      />
+      <MovieRow
+        title="Trending"
+        fetchUrl={requests.fetchTrending}
+      />
+      <MovieRow
+        title="Top Rated"
+        fetchUrl={requests.fetchTopRated}
+      />
+      <MovieRow
+        title="Action Movies"
+        fetchUrl={requests.fetchActionMovies}
+      />
+      <MovieRow
+        title="Comedy Movies"
+        fetchUrl={requests.fetchComedyMovies}
+      />
+      <MovieRow
+        title="Horror Movies"
+        fetchUrl={requests.fetchHorrorMovies}
+      />
+      <MovieRow
+        title="Documentaries"
+        fetchUrl={requests.fetchDocumentaries}
       />
 
       {/* Footer (Maybe) */}
