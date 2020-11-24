@@ -6,9 +6,18 @@
   margin: 0 10px;
 }
 
+.poster-wrapper {
+  overflow: hidden;
+}
+
 .poster {
   width: 175px;
   object-fit: contain;
+  transition: transform 0.3s ease-in;
+}
+
+.poster:hover {
+  transform: scale(1.15);
 }
 
 .movie-title {

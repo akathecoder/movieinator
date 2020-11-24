@@ -6,11 +6,14 @@ const baseUrl = "https://image.tmdb.org/t/p/original";
 function MovieCard({ title, imgPath }) {
   return (
     <div className="card">
-      <img
-        className="poster"
-        src={`${baseUrl}${imgPath}`}
-        alt={title}
-      />
+      <div className="poster-wrapper">
+        <img
+          className="poster"
+          src={`${baseUrl}${imgPath}`}
+          alt={title}
+        />
+      </div>
+
       <h5 className="movie-title">{title}</h5>
     </div>
   );
