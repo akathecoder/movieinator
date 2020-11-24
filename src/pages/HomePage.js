@@ -3,11 +3,13 @@ import MovieRow from "../components/MovieRow";
 import requests from "./../utils/requests";
 import "./../styles/HomePage.css";
 import Banner from "../components/Banner";
+import Navbar from "../components/Navbar";
 
 function HomePage() {
   return (
     <div className="homepage">
       {/* Navbar */}
+      <Navbar />
 
       {/* Banner */}
       <Banner />
