@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "./../utils/axios";
 import MovieCard from "./MovieCard";
+import "./../styles/MovieRow.css";
 
 function MovieRow({ title, fetchUrl }) {
   const [movies, setMovies] = useState([]);
@@ -18,7 +19,7 @@ function MovieRow({ title, fetchUrl }) {
 
   return (
     <div className="row">
-      <h2>{title}</h2>
+      <h2 className="title">{title}</h2>
       <div className="row-posters">
         {movies.map((movie) => {
           return (

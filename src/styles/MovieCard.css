@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+}
+
+.card {
+  margin: 0 10px;
+}
+
+.poster {
+  width: 175px;
+  object-fit: contain;
+}
+
+.movie-title {
+  font-size: 1rem;
+  margin-top: 8px;
+  margin-left: 3px;
+  font-weight: 600;
+}

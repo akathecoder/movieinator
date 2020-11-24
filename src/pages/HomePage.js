@@ -1,6 +1,7 @@
 import React from "react";
 import MovieRow from "../components/MovieRow";
 import requests from "./../utils/requests";
+import "./../styles/HomePage.css";
 
 function HomePage() {
   return (
