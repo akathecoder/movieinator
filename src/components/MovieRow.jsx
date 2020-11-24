@@ -32,6 +32,7 @@ function MovieRow({ title, fetchUrl }) {
                 movie?.original_title
               }
               imgPath={movie.poster_path}
+              id={movie.id}
             />
           );
         })}

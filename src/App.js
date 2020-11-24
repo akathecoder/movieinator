@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import HomePage from "./pages/HomePage";
+import MoviePage from "./pages/MoviePage";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/" exact component={HomePage} />
+          <Route path="/:id" component={MoviePage} />
         </Switch>
       </Router>
     </>
