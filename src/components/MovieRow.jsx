@@ -15,14 +15,19 @@ function MovieRow({ title, fetchUrl }) {
     fetchMovies();
   }, [fetchUrl]);
 
-  //   console.log(title);
-  //   console.log(movies);
+  // console.log(title);
+  // console.log(movies);
 
   return (
     <div className="row">
       <h2 className="title">{title}</h2>
       <div className="row-posters">
         {movies.map((movie) => {
+          let type = "movie";
+          if (movie.media_type === "tv") {
+            type = "tv";
+          }
+
           return (
             <MovieCard
               key={movie.id}
@@ -33,6 +38,7 @@ function MovieRow({ title, fetchUrl }) {
               }
               imgPath={movie.poster_path}
               id={movie.id}
+              link={`/${type}/${movie.id}`}
             />
           );
         })}

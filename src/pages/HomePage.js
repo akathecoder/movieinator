@@ -15,10 +15,10 @@ function HomePage() {
       <Banner />
 
       {/* Movie Rows */}
-      <MovieRow
+      {/* <MovieRow
         title="Netflix Originals"
         fetchUrl={requests.fetchNetflixOriginals}
-      />
+      /> */}
       <MovieRow
         title="Trending"
         fetchUrl={requests.fetchTrending}

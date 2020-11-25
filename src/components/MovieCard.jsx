@@ -3,11 +3,11 @@ import "./../styles/MovieCard.css";
 
 const baseUrl = "https://image.tmdb.org/t/p/original";
 
-function MovieCard({ id, title, imgPath }) {
+function MovieCard({ id, title, imgPath, link }) {
   return (
     <div className="card">
       <div className="poster-wrapper">
-        <a href={`/${id}`}>
+        <a href={link}>
           <img
             className="poster"
             src={`${baseUrl}${imgPath}`}

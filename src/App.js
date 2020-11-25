@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import MoviePage from "./pages/MoviePage";
+import TVPage from "./pages/TVPage";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <Router>
         <Switch>
           <Route path="/" exact component={HomePage} />
-          <Route path="/:id" component={MoviePage} />
+          <Route path="/movie/:id" component={MoviePage} />
+          <Route path="/tv/:id" component={TVPage} />
         </Switch>
       </Router>
     </>
