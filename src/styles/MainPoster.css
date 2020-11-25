@@ -1,0 +1,18 @@
+/* .poster-wrapper {
+  margin: 0;
+  padding: 0;
+} */
+
+.main-poster {
+  /* position: absolute; */
+  margin-left: 10%;
+  object-fit: contain;
+  z-index: 1;
+  top: 20vh;
+  width: 25%;
+  transition: none;
+}
+
+.main-poster:hover {
+  transform: none;
+}
