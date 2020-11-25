@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./../styles/Navbar.css";
+import logo from "./../assets/logo.png";
 
 function Navbar() {
   const [show, setShow] = useState(false);
@@ -20,7 +21,7 @@ function Navbar() {
       <a href="/">
         <img
           className="nav-logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/250px-Netflix_2015_logo.svg.png"
+          src={logo}
           alt="Netflix Logo"
         />
       </a>
