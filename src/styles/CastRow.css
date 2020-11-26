@@ -19,8 +19,15 @@
 }
 
 .cast-member-img {
-  width: 150px;
+  /* width: 150px; */
+  height: 225px;
   object-fit: contain;
+}
+
+.person-img {
+  width: 150px;
+  height: 225px;
+  /* object-fit: contain; */
 }
 
 .cast-member-name {
