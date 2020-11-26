@@ -33,41 +33,43 @@ function MoviePage() {
       <Navbar />
 
       {/* Backdrop */}
-      <Backdrop path={movie.backdrop_path} />
+      {/* <Backdrop path={movie.backdrop_path} /> */}
 
-      <div className="description">
-        {/* Poster */}
-        <Poster path={movie.poster_path} />
+      <header
+        className="top-banner"
+        style={{
+          backgroundSize: "cover",
+          backgroundImage: `url(
+        "https://image.tmdb.org/t/p/original/${movie?.backdrop_path}"
+        )`,
+          backgroundPosition: "center center",
+          backgroundColor: "grey",
+          backgroundBlendMode: "multiply",
+        }}
+      >
+        <div className="description">
+          <Poster path={movie.poster_path} />
 
-        {/* Details */}
-        <div className="details">
-          <h1 className="title">
-            {movie.title}{" "}
-            <span className="title-year">
-              ({new Date(movie.release_date).getFullYear()})
-            </span>
-          </h1>
+          {/* Details */}
+          <div className="details">
+            <h1 className="title">
+              {movie.title}{" "}
+              <span className="title-year">
+                (
+                {new Date(movie.release_date).getFullYear()}
+                )
+              </span>
+            </h1>
 
-          <h2 className="tagline">{movie.tagline}</h2>
+            <h2 className="tagline">{movie.tagline}</h2>
 
-          <h2 className="overview-title">Overview</h2>
-          <p className="overview">{movie.overview}</p>
-
-          {/* Genres */}
-          {/* <h4>
-            <ul className="genres">
-              {movie.genres.map((genre) => {
-                return (
-                  <>
-                    <li className="genre">{genre.name}</li>
-                    <li className="bull-dot">&#8226;</li>
-                  </>
-                );
-              })}
-            </ul>
-          </h4> */}
+            <h2 className="overview-title">Overview</h2>
+            <p className="overview">{movie.overview}</p>
+          </div>
         </div>
-      </div>
+
+        <div className="background-fadeBottom" />
+      </header>
 
       {/* Cast */}
       <CastRow id={id} />

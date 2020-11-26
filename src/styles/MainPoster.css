@@ -5,11 +5,12 @@
 
 .main-poster {
   /* position: absolute; */
-  margin-left: 10%;
+  margin-left: 15%;
+  /* padding: 10rem; */
   object-fit: contain;
   z-index: 1;
-  top: 20vh;
-  width: 25%;
+  /* top: 20vh; */
+  width: 15%;
   transition: none;
 }
 

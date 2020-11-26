@@ -18,23 +18,31 @@ code {
 }
 
 .app {
-  /* background-color: #111; */
   color: white;
+}
+
+.top-banner {
+  height: 75vh;
 }
 
 .description {
   display: flex;
-  position: absolute;
-  margin-left: 20px;
-  z-index: 1;
   top: 10%;
   transition: none;
+  /* align-items: center; */
   /* vertical-align: middle; */
+  /* align-self: center; */
+  height: 70vh;
+
+  /* TODO: Background gradient not working */
+  /* background: linear-gradient(
+    142deg,
+    rgba(0, 0, 0, 0.8) 15%,
+    rgba(110, 110, 110, 1) 100%
+  ); */
 }
 
 .details {
-  /* margin-top: 100px; */
-  /* align-content: center; */
   align-self: center;
   margin-left: 30px;
 }
@@ -79,4 +87,22 @@ code {
 
 .bull-dot {
   margin: 0 10px;
+}
+
+.background-fadeBottom {
+  /* z-index: 1; */
+  /* margin-top: 70vh; */
+  height: 5vh;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(255, 255, 255, 0.61),
+    #111
+  );
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
 }
