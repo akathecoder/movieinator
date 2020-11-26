@@ -1,0 +1,49 @@
+.cast-row {
+  margin: 1.4rem;
+}
+
+.cast-title {
+  font-size: 1.8rem;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.cast {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.cast-member {
+  padding: 10px;
+}
+
+.cast-member-img {
+  width: 150px;
+  object-fit: contain;
+}
+
+.cast-member-name {
+  margin-top: 3.5px;
+  margin-left: 2px;
+  font-size: medium;
+  font-weight: 600;
+}
+.cast-member-character {
+  margin-top: 3.5px;
+  margin-left: 2px;
+  font-size: small;
+  font-weight: 500;
+  color: grey;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.cast::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.cast {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -5,6 +5,7 @@ import "./../styles/MoviePage.css";
 import Backdrop from "../components/Backdrop";
 import Poster from "../components/MainPoster";
 import Navbar from "../components/Navbar";
+import CastRow from "../components/CastRow";
 
 function MoviePage() {
   const { id } = useParams();
@@ -68,6 +69,7 @@ function MoviePage() {
       </div>
 
       {/* Cast */}
+      <CastRow id={id} />
     </div>
   );
 }
