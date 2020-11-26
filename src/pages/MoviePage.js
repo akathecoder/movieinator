@@ -6,6 +6,7 @@ import Backdrop from "../components/Backdrop";
 import Poster from "../components/MainPoster";
 import Navbar from "../components/Navbar";
 import CastRow from "../components/CastRow";
+import Similar from "../components/Similar";
 
 function MoviePage() {
   const { id } = useParams();
@@ -70,6 +71,10 @@ function MoviePage() {
 
       {/* Cast */}
       <CastRow id={id} />
+
+      {/* Top Recommendations & Similar */}
+      <Similar type="0" id={id} />
+      <Similar type="1" id={id} />
     </div>
   );
 }

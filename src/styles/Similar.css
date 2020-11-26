@@ -1,0 +1,51 @@
+.similar-section {
+  margin: 1.4rem;
+}
+
+.similar-section-title {
+  font-size: 1.8rem;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.similar-section-row {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.movie {
+  padding: 10px;
+}
+
+.similar-movie-poster-wrapper {
+  overflow: hidden;
+}
+
+.similar-movie-poster {
+  height: 225px;
+  object-fit: contain;
+  transition: transform 0.3s ease-in;
+}
+
+.similar-movie-poster:hover {
+  transform: scale(1.15);
+}
+
+.similar-movie-title {
+  margin-top: 3.5px;
+  margin-left: 2px;
+  font-size: medium;
+  font-weight: 500;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.similar-section-row::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.similar-section-rows {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
