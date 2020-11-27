@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Movieinator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Movieinator** is a Website made in React which shows details of different Movies and TV Shows. It fetches the data from **TMDB API**. It's UI if inspired from Netflix's UI.
 
-## Available Scripts
+The Website is currently in Development.
 
-In the project directory, you can run:
+Live Demo : <https://movieinator.herokuapp.com/>
 
-### `yarn start`
+Github Link : <https://github.com/akathecoder/movieinator>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+API Link : <https://developers.themoviedb.org/3/getting-started/introduction>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Development Setup
 
-### `yarn test`
+### Pre Requisites:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [NodeJS](https://nodejs.org/en/)
+- [NPM](https://www.npmjs.com/get-npm)
+- [Yarn](https://classic.yarnpkg.com/en/docs/install/)
+- Code Editor
 
-### `yarn build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. To start development from this repository, first you need to clone it.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. After Cloning the Repo first install all the dependencies by running this command in terminal.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   `yarn install`
 
-### `yarn eject`
+   Installs all the dependencies required for the project.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Get a free API Key at https://www.themoviedb.org/settings/api .
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Create a `.env` file in the root of the project folder and enter the API Key.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   `REACT_APP_API_KEY : 'ENTER YOUR API KEY'`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+5. Now you can start working on the project.
 
-## Learn More
+6. After all the dependencies are installed you can start the development server by running the following command in the terminal.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   `yarn start`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   Runs the app in the development mode.
 
-### Code Splitting
+   Open [http://localhost:3000](http://localhost:3000) to view it in the browser.\
+   The page will reload if you make edits.\
+   You will also see any lint errors in the console.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+7. After the development is complete you can build a production ready project by running the following command.
 
-### Analyzing the Bundle Size
+   `yarn build`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   Builds the app for production to the `build` folder.
 
-### Making a Progressive Web App
+   It correctly bundles React in production mode and optimizes the build for the best performance.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Resources
 
-### Advanced Configuration
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [Create React Apps](https://create-react-app.dev/docs/getting-started)
+- [TMDB API](https://developers.themoviedb.org/3/getting-started/introduction)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Licence
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Distributed under the GPL 3.0 License. See `LICENSE` for more information.
