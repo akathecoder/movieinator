@@ -25,7 +25,9 @@ API Link : <https://developers.themoviedb.org/3/getting-started/introduction>
 
 2. After Cloning the Repo first install all the dependencies by running this command in terminal.
 
-   `yarn install`
+   ```sh
+   yarn install
+   ```
 
    Installs all the dependencies required for the project.
 
@@ -33,13 +35,17 @@ API Link : <https://developers.themoviedb.org/3/getting-started/introduction>
 
 4. Create a `.env` file in the root of the project folder and enter the API Key.
 
-   `REACT_APP_API_KEY : 'ENTER YOUR API KEY'`
+   ```env
+   REACT_APP_API_KEY : 'ENTER YOUR API KEY'
+   ```
 
 5. Now you can start working on the project.
 
 6. After all the dependencies are installed you can start the development server by running the following command in the terminal.
 
-   `yarn start`
+   ```sh
+   yarn start
+   ```
 
    Runs the app in the development mode.
 
@@ -49,7 +55,9 @@ API Link : <https://developers.themoviedb.org/3/getting-started/introduction>
 
 7. After the development is complete you can build a production ready project by running the following command.
 
-   `yarn build`
+   ```sh
+   yarn build
+   ```
 
    Builds the app for production to the `build` folder.
 
