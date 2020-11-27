@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "./../utils/axios";
 import "./../styles/MoviePage.css";
-import Backdrop from "../components/Backdrop";
+
 import Poster from "../components/MainPoster";
 import Navbar from "../components/Navbar";
 import CastRow from "../components/CastRow";
@@ -33,7 +33,6 @@ function MoviePage() {
       <Navbar />
 
       {/* Backdrop */}
-      {/* <Backdrop path={movie.backdrop_path} /> */}
 
       <header
         className="top-banner"
