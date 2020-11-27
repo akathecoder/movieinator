@@ -5,22 +5,24 @@ import person from "./../assets/person_icon.png";
 
 const baseUrl = "https://image.tmdb.org/t/p/original";
 
-function CastRow({ id }) {
+function CastRow({ type, id }) {
   //   const url = `/movie/${id}/credits`;
 
   const [cast, setCast] = useState([]);
 
   useEffect(() => {
     async function getCastDetails() {
-      const request = await axios.get(
-        `/movie/${id}/credits`,
-        {
-          params: {
-            api_key: process.env.REACT_APP_API_KEY,
-            language: "en-US",
-          },
-        }
-      );
+      let url = `/movie/${id}/credits`;
+      if (type === "tv-show") {
+        url = `/tv/${id}/credits`;
+      }
+
+      const request = await axios.get(url, {
+        params: {
+          api_key: process.env.REACT_APP_API_KEY,
+          language: "en-US",
+        },
+      });
 
       //   console.log(request.data.cast);
       setCast(request.data.cast);
@@ -28,7 +30,7 @@ function CastRow({ id }) {
     }
 
     getCastDetails();
-  }, [id]);
+  }, [type, id]);
 
   return (
     <div className="cast-row">
@@ -38,7 +40,7 @@ function CastRow({ id }) {
           return (
             <div
               className="cast-member"
-              key={castMember.cast_id}
+              key={castMember.cast_id || castMember.id}
             >
               <img
                 src={

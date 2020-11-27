@@ -4,16 +4,16 @@ import "./../styles/Similar.css";
 
 const baseUrl = "https://image.tmdb.org/t/p/original";
 
-function Similar({ type, id }) {
+function Similar({ type = "movie", titleType, id }) {
   const [similarMovieData, setSimilarMovieData] = useState(
     []
   );
 
   useEffect(() => {
-    let url = `/movie/${id}/recommendations`;
+    let url = `/${type}/${id}/recommendations`;
 
-    if (type === "1") {
-      url = `/movie/${id}/similar`;
+    if (titleType === "1") {
+      url = `/${type}/${id}/similar`;
     }
 
     async function getData() {
@@ -24,24 +24,26 @@ function Similar({ type, id }) {
           page: 1,
         },
       });
-      console.log(request.data.results);
+      // console.log(request.data.results);
       setSimilarMovieData(request.data.results);
       return request;
     }
     getData();
-  }, [type, id]);
+  }, [type, titleType, id]);
 
   return (
     <div className="similar-section">
       <h2 className="similar-section-title">
-        {type === "0" ? "Recommendation" : "Similar Movies"}
+        {titleType === "0"
+          ? "Recommendation"
+          : `Similar ${type === "tv" ? "Shows" : "Movies"}`}
       </h2>
       <div className="similar-section-row">
         {similarMovieData.map((movie) => {
           return (
             <div className="movie" key={movie.id}>
               <div className="similar-movie-poster-wrapper">
-                <a href={`/movie/${movie.id}`}>
+                <a href={`/${type}/${movie.id}`}>
                   <img
                     src={`${baseUrl}${movie.poster_path}`}
                     alt={

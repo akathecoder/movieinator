@@ -26,7 +26,7 @@ function MoviePage() {
       return request;
     }
     getMovieDetails();
-  });
+  }, [id]);
 
   return (
     <div className="app">
@@ -74,8 +74,8 @@ function MoviePage() {
       <CastRow id={id} />
 
       {/* Top Recommendations & Similar */}
-      <Similar type="0" id={id} />
-      <Similar type="1" id={id} />
+      <Similar titleType="0" id={id} />
+      <Similar titleType="1" id={id} />
     </div>
   );
 }
