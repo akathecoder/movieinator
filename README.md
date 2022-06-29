@@ -10,7 +10,11 @@ API Link : [https://developers.themoviedb.org/3/getting-started/introduction](ht
 
 ## Video Demo
 
-[![Movieinator Live Demo](assets/movieinator-ss.jpg)](https://www.youtube.com/watch?v=uWMfVNYhmQ0 "Movieinator Live Demo"){:target="\_blank"}
+<a href="https://www.youtube.com/watch?v=uWMfVNYhmQ0" alt="Movieinator Live Demo" target="_blank">
+
+![Movieinator Live Demo](assets/movieinator-ss.jpg)
+
+</a>
 
 <br/>
 
