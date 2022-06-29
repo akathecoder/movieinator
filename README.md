@@ -10,9 +10,7 @@ API Link : [https://developers.themoviedb.org/3/getting-started/introduction](ht
 
 ## Video Demo
 
-<!-- [![Movieinator Live Demo](assets/movieinator-ss.jpg)](https://www.youtube.com/watch?v=uWMfVNYhmQ0 "Movieinator Live Demo") -->
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uWMfVNYhmQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Movieinator Live Demo](assets/movieinator-ss.jpg)](https://www.youtube.com/watch?v=uWMfVNYhmQ0 "Movieinator Live Demo"){:target="\_blank"}
 
 <br/>
 
