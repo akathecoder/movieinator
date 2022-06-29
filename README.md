@@ -2,13 +2,17 @@
 
 **Movieinator** is a Website made in React which shows details of different Movies and TV Shows. It fetches the data from **TMDB API**. It's UI if inspired from Netflix's UI.
 
-The Website is currently in Development.
+Live Demo : [https://movieinator.vercel.app/](https://movieinator.vercel.app/)
 
-Live Demo : <https://movieinator.herokuapp.com/>
+Github Link : [https://github.com/akathecoder/movieinator](https://github.com/akathecoder/movieinator)
 
-Github Link : <https://github.com/akathecoder/movieinator>
+API Link : [https://developers.themoviedb.org/3/getting-started/introduction](https://developers.themoviedb.org/3/getting-started/introduction)
 
-API Link : <https://developers.themoviedb.org/3/getting-started/introduction>
+## Video Demo
+
+[![Movieinator Live Demo](assets/movieinator-ss.jpg)](https://www.youtube.com/watch?v=uWMfVNYhmQ0 "Movieinator Live Demo")
+
+<br/>
 
 ## Development Setup
 
